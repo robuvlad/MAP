@@ -1,0 +1,10 @@
+FINAL PROJECT
+
+  This web application is a good application for teachers and students where they can see the information about themselves, grades,
+different filters, pie chart for reports. The app allows the following:
+  - add / update / delete student or teacher;
+  - see different filters and reports based on the data;
+  - generate PDF document with the information from reports;
+  - send e-mails to students where a new homework is added or when he / she gets a grade;
+  
+  This app includes OOP principles, design patterns, data file, SQLite databse, Threading, use of iText library.
