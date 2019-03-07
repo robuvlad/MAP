@@ -1,0 +1,16 @@
+#leftLabel {
+     -fx-text-fill: black;
+     -fx-font-weight: bold;
+     -fx-font-family: "Calibri";
+     -fx-font-size: 13px;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #8b4513;
+    -fx-fill: #8b4513;
+}
+
+.chart-pie-label {
+    -fx-fill: #ffffff;
+    -fx-font-size: 14px;
+}

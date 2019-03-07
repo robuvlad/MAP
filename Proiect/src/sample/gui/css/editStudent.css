@@ -1,0 +1,32 @@
+.root {
+    -fx-background-color: linear-gradient(#b0dab9, #dad299);
+}
+
+.button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Black";
+}
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.label {
+    -fx-text-fill: #e74c3c;
+    -fx-font-family: "Segoe UI Black";
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #ff5400;
+    -fx-border-width: 1;
+    -fx-border-style: segments(5, 5, 5, 5) line-cap round;
+    -fx-font-family: "Segoe UI Black";
+    -fx-prompt-text-fill: #afafaf;
+    -fx-text-fill: #ffffff;
+}
+

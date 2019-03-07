@@ -1,0 +1,103 @@
+#mainAnchorPane{
+    -fx-background-color: linear-gradient(#dad299, #b0dab9);
+}
+
+.menu-bar {
+    -fx-font-family: 'Segoe UI Black';
+    -fx-background-color: #dad299;
+    -fx-text-fill: #ff5400;
+}
+
+.menu-bar .menu:hover {
+    -fx-background-color: #ff5400;
+    -fx-text-fill: #ffffff;
+}
+
+.table-view {
+    -fx-background-color: #d3cd9e;
+}
+
+.table-view .column-header{
+    -fx-background-color: #bfb98f;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI Black';
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-family: "Calibri";
+}
+
+.table-row-cell {
+    -fx-font-size: 13px;
+}
+
+.table-row-cell : even{
+    -fx-background-color: #f9f2bb;
+}
+
+.table-row-cell : odd {
+    -fx-background-color: #d3cd9e;
+}
+
+.table-view .scroll-bar {
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+}
+
+.table-view .scroll-bar : vertical {
+    -fx-background-color: d3cd9e;
+}
+
+.table-view .increment-button,
+.table-view .decrement-button {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+}
+
+.table-view .scroll-bar:vertical .track,
+.table-view .scroll-bar:horizontal .track{
+    -fx-background-color: f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-radius: 0em;
+}
+
+.table-view .scroll-bar:vertical .thumb,
+.table-view .scroll-bar:horizontal .thumb{
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0em;
+    -fx-background-color: #d3cd9e;
+}
+
+.corner {
+    -fx-background-color: #d3cd9e;
+}
+
+.table-view .filler {
+    -fx-background-color: #d3cd9e;
+}
+
+.anchor-pane {
+    -fx-background-color: #890000;
+}
+
+Button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI Black';
+}
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+#topLabel {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+    -fx-font-family: 'Segoe UI Black';
+}

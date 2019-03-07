@@ -1,0 +1,8 @@
+1#Laborator 1#2#1
+2#Laborator 2#3#2
+3#Laborator 3#5#3
+4#Laborator 4#6#5
+5#Laborator 5#7#6
+6#Laborator 6#8#7
+7#Laborator 7#9#8
+8#Laborator 8#10#9

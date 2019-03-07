@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" onMouseClicked="#back" prefHeight="631.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gui.controller.HomeworkController">
+    <children>
+        <MenuBar layoutY="1.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#openPopUpHandler" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane layoutX="133.0" layoutY="82.0" prefHeight="466.0" prefWidth="590.0">
+            <items>
+                <AnchorPane prefHeight="486.0" prefWidth="506.0">
+                    <children>
+                        <TableView fx:id="tableView" prefHeight="466.0" prefWidth="590.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <SplitPane fx:id="splitPaneButtons" layoutX="248.0" layoutY="548.0" prefHeight="54.0" prefWidth="362.0">
+            <items>
+                <HBox id="hBox" prefHeight="37.0" prefWidth="361.0">
+                    <children>
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addHomeworkHandler" prefHeight="33.0" prefWidth="100.0" text="Add" textAlignment="CENTER">
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" top="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Calibri" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateHomeworkHandler" prefHeight="33.0" prefWidth="102.0" text="Update">
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" top="20.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="removeButton" mnemonicParsing="false" onAction="#removeHomeworkHandler" prefHeight="33.0" prefWidth="102.0" text="Remove">
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" top="20.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </items>
+        </SplitPane>
+        <Label id="topLabel" layoutX="152.0" layoutY="41.0" text="Current homeworks at UBB - Computer Science" />
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="41.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+    </children>
+   <stylesheets>
+      <URL value="@../css/studentHome.css" />
+      <URL value="@../css/alert.css" />
+      <URL value="@../css/tableStyle.css" />
+   </stylesheets>
+</AnchorPane>

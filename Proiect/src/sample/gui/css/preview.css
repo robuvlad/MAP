@@ -1,0 +1,44 @@
+#mainAnchorPane{
+    -fx-background-color: linear-gradient(#dad299, #b0dab9);
+}
+
+.split-pane {
+    -fx-background-color: transparent;
+}
+
+.hbox {
+    -fx-background-color: transparent;
+}
+
+Button {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Black";
+}
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.label {
+    -fx-alignment: center;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+#leftLabel {
+     -fx-text-fill: #e74c3c;
+     -fx-font-weight: bold;
+     -fx-font-family: "Segoe UI Black";
+}
+
+.text-flow {
+     -fx-alignment: center;
+     -fx-font-family: "Calibri";
+     -fx-font-size: 13px;
+     -fx-font-weight: bold;
+}

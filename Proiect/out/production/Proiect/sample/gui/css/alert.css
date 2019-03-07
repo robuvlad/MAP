@@ -1,0 +1,40 @@
+.dialog-pane{
+  -fx-background-color: linear-gradient(#dad299, #b0dab9);
+ }
+
+.dialog-pane > .button-bar > .container {
+  -fx-background-color: transparent;
+}
+
+.dialog-pane > .content.label {
+   -fx-padding: 0 0 0 20px;
+   -fx-text-fill: black;
+   -fx-font-family: "Calibri";
+   -fx-font-size: 13px;
+}
+
+.dialog-pane:header .header-panel {
+   -fx-background-color: transparent;
+}
+
+.dialog-pane:header .header-panel .label{
+  -fx-text-fill: black;
+  -fx-font-weight: bold;
+  -fx-font-family: "Segoe UI Black";
+  -fx-font-size: 15px;
+  -fx-alignment: center;
+}
+
+.dialog-pane .button{
+   -fx-background-color: linear-gradient(#ff5400, #be1d00);
+   -fx-background-radius: 30;
+   -fx-background-insets: 0;
+   -fx-text-fill: white;
+   -fx-font-family: "Segoe UI Black";
+   -fx-alignment: center;
+}
+
+.dialog-pane .button:hover {
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}

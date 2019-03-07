@@ -1,0 +1,8 @@
+#splitPaneButtons {
+    -fx-box-border: transparent;
+    -fx-background-color: transparent;
+}
+
+#hBox {
+    -fx-background-color: transparent;
+}

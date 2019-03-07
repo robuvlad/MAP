@@ -1,0 +1,52 @@
+.split-pane {
+    -fx-background-color: transparent;
+}
+
+#leftLabel {
+     -fx-text-fill: #e74c3c;
+     -fx-font-weight: bold;
+     -fx-font-family: "Segoe UI Black";
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 80%;
+    -fx-border-color: black;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+}
+
+.combo-box .scroll-bar {
+    -fx-pref-width: 8;
+}
+
+.combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #d3cd9e;
+}
+
+.combo-box .increment-button,
+.combo-box .decrement-button {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+}
+
+.combo-box .scroll-bar .track {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-radius: 0em;
+}
+
+.combo-box .scroll-bar .thumb {
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0em;
+    -fx-background-color: #d3cd9e;
+}

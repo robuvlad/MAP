@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="680.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gui.controller.GradeController">
+   <children>
+      <SplitPane fx:id="gradeSplitPane" layoutX="549.0" layoutY="84.0" prefHeight="251.0" prefWidth="462.0">
+         <items>
+            <GridPane prefHeight="239.0" prefWidth="461.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.8" minWidth="10.0" prefWidth="127.9999969482422" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.9999664306641" minWidth="0.0" prefWidth="309.6000030517578" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="45.599996948242186" minHeight="10.0" prefHeight="36.800009155273436" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="63.999990844726554" minHeight="10.0" prefHeight="49.600006103515625" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.79999389648438" minHeight="10.0" prefHeight="39.79998168945312" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="69.60001831054689" minHeight="10.0" prefHeight="69.60001831054689" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextArea fx:id="feedbackTextArea" prefHeight="34.0" prefWidth="134.0" promptText="Add feedback ..." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Homework" GridPane.halignment="CENTER" />
+                  <Label text="Student" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Label text="Mark" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <Label text="Feedback" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="comboBox" onAction="#fillTextAreaHandler" prefHeight="30.0" prefWidth="134.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <TextField fx:id="studentTextField" onKeyReleased="#textFieldReleased" prefHeight="14.0" prefWidth="122.0" promptText="Search here ..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="valueMarkTextField" prefHeight="22.0" prefWidth="129.0" promptText="Add mark ..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Absent" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="absentCheckBox" mnemonicParsing="false" onAction="#checkBoxHandler" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </items>
+      </SplitPane>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#closeHandler" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#openPopUpHandler" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane layoutX="47.0" layoutY="84.0" prefHeight="476.0" prefWidth="442.0">
+         <items>
+            <AnchorPane prefHeight="262.0" prefWidth="447.0">
+               <children>
+                  <TableView fx:id="tableViewStudHome" prefHeight="486.0" prefWidth="442.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="549.0" layoutY="380.0" prefHeight="270.0" prefWidth="461.0">
+         <items>
+            <AnchorPane prefHeight="242.0" prefWidth="335.0">
+               <children>
+                  <TableView fx:id="filterTable" layoutY="-3.0" prefHeight="270.0" prefWidth="460.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label fx:id="topLabel" layoutX="485.0" layoutY="34.0" text="Grades" />
+      <Button fx:id="previewButton" layoutX="752.0" layoutY="340.0" mnemonicParsing="false" onAction="#previewHandler" text="Preview" />
+      <GridPane layoutX="156.0" layoutY="593.0" prefHeight="30.0" prefWidth="226.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.79998779296875" minWidth="10.0" prefWidth="106.39998779296874" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.39996337890625" minWidth="10.0" prefWidth="119.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="bottomComboBox" prefHeight="27.0" prefWidth="114.0" />
+            <TextField fx:id="bottomTextField" onKeyReleased="#textFieldBottomReleased" promptText="Search here ..." GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="38.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="@../css/grade.css" />
+      <URL value="@../css/alert.css" />
+      <URL value="@../css/tableStyle.css" />
+   </stylesheets>
+</AnchorPane>

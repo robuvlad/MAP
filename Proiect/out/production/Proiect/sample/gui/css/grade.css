@@ -1,0 +1,87 @@
+#gradeSplitPane {
+    -fx-box-border: transparent;
+    -fx-background-color: transparent;
+}
+
+#gradeSplitPane .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #e74c3c;
+    -fx-font-family: "Segoe UI Black";
+}
+
+.text-area {
+    -fx-border-radius: 10 10 10 10;
+}
+
+.text-area, .text-area .content {
+    -fx-background-color: #f9f2bb;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+}
+
+.text-area .increment-button,
+.text-area .decrement-button {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+}
+
+.text-area .scroll-bar {
+    -fx-pref-height: 10;
+}
+
+.text-area .scroll-bar .track {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-radius: 0em;
+}
+
+.text-area .scroll-bar .thumb {
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0em;
+    -fx-background-color: #d3cd9e;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 80%;
+    -fx-border-color: black;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+}
+
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 13px;
+}
+
+.combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #d3cd9e;
+}
+
+.combo-box .increment-button,
+.combo-box .decrement-button {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+}
+
+.combo-box .scroll-bar .track {
+    -fx-background-color: #f9f2bb;
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-radius: 0em;
+}
+
+.combo-box .scroll-bar .thumb {
+    -fx-border-color: derive(gray, 80%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0em;
+    -fx-background-color: #d3cd9e;
+}
